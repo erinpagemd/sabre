@@ -2,6 +2,15 @@
 
 Sabre API: https://developer.sabre.com/docs/read/REST_APIs
 
+## What is this app?
+Itching to get out of town!?! This app helps chose a vacation based on budget and available dates to travel.
+
+* User gives an amount of money, begin date, and end date.
+
+* Making a call to the Destination Finder API of Sabre.
+
+** https://developer.sabre.com/docs/read/rest_apis/air/search/destination_finder
+
 ## Includes the following technologies:
 
 ### Config
