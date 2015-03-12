@@ -1,11 +1,11 @@
 {
-  "name": "template",
+  "name": "sabre",
   "version": "0.0.0",
-  "homepage": "https://github.com/erinpagemd/template",
+  "homepage": "https://github.com/erinpagemd/sabre",
   "authors": [
     "Erin <erinpagemd@yahoo.com>"
   ],
-  "description": "Template Angular App",
+  "description": "Angular App using Sabre API",
   "license": "MIT",
   "ignore": [
     "**/.*",

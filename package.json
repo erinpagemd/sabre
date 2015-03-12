@@ -1,21 +1,21 @@
 {
-  "name": "best-review",
+  "name": "sabre",
   "version": "1.0.0",
-  "description": "Angular app using the Best Buy Developer API",
+  "description": "Angular app using the Sabre Developer API",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/erinpagemd/best-review.git"
+    "url": "https://github.com/erinpagemd/sabre.git"
   },
   "author": "Erin M Page",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/erinpagemd/best-review/issues"
+    "url": "https://github.com/erinpagemd/sabre/issues"
   },
-  "homepage": "https://github.com/erinpagemd/best-review",
+  "homepage": "https://github.com/erinpagemd/sabre",
   "dependencies": {
     "firebase": "^2.2.2"
   },
