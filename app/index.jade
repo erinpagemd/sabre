@@ -19,9 +19,8 @@ html
          a.navbar-brand(ui-sref='home') anyPlane
        #navbar.collapse.navbar-collapse
          ul.nav.navbar-nav.navbar-right
-           li: a(ui-sref='home'): i.fa.fa-home &nbsp; Home
+           li: a(ui-sref='home'): i.fa.fa-plane &nbsp; Home
            li: a(ui-sref='login'): i.fa.fa-bolt &nbsp; Login
-           li: a(ui-sref='results'): i.fa.fa-airplane &nbsp; Results
 
     div(ui-view)
       
@@ -31,3 +30,5 @@ html
     script(src='vendor/angular/angular.js')
     script(src='vendor/angular-ui-router/release/angular-ui-router.js')
     script(src='index.js')
+    script(src='views/login.js')
+    script(src='models/users.js')

@@ -9,13 +9,14 @@
           tbody
             tr.username-login
               td: label(for='username-login') Email
-              td: input#username-login.form-control(type='email' placeholder='email')
+              td: input#username-login.form-control(ng-model='username' type='email' placeholder='email')
             tr.password-login
               td: label(for='password-login') Password
-              td: input#password-login.form-control(placeholder='password')
+              td: input#password-login.form-control(ng-model='password' placeholder='password')
             tr.confirm-login
               td: label(for='confirm-login') Confirm Password
-              td: input#confirm-login.form-control(placeholder='confirm password')
+              td: input#confirm-login.form-control(ng-model='confirm' placeholder='confirm password')
       .row.btn-login
-        button.btn.btn-info.btn-lg Login
-        button.btn.btn-default Register new account
+        button.btn.btn-info.btn-lg(ng-click='getAuth()') Login
+        button.btn.btn-default.btn-lg(ng-click='makeAuth()') Register
+        
