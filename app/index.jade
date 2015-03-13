@@ -7,29 +7,23 @@ html
     link(rel='stylesheet' href='vendor/font-awesome/css/font-awesome.min.css')
     link(rel='stylesheet' href='index.css' type='text/css')
     title Sabre
-  body
-    .container
-      h1 Get on a plane
-      video(loop='' poster='' autoplay='' id='airplane-video' class='video-playing')
-        source(src='images/airlinemontage.mp4' type='video/mp4')
-        //- source(src='something.webm' type='video/webm')
+  body(ng-app='anyPlane')
+    nav.navbar.navbar-default
+     .container-fluid
+       .navbar-header
+         button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
+           span.sr-only Toggle navigation
+           span.icon-bar
+           span.icon-bar
+           span.icon-bar
+         a.navbar-brand(ui-sref='home') anyPlane
+       #navbar.collapse.navbar-collapse
+         ul.nav.navbar-nav.navbar-right
+           li: a(ui-sref='home'): i.fa.fa-home &nbsp; Home
+           li: a(ui-sref='login'): i.fa.fa-bolt &nbsp; Login
+           li: a(ui-sref='results'): i.fa.fa-airplane &nbsp; Results
 
-      
-      nav.navbar.navbar-default
-       .container-fluid
-         .navbar-header
-           button.navbar-toggle.collapsed(data-toggle="collapse", data-target="#navbar")
-             span.sr-only Toggle navigation
-             span.icon-bar
-             span.icon-bar
-             span.icon-bar
-           a.navbar-brand(ui-sref='home') Template
-         #navbar.collapse.navbar-collapse
-           ul.nav.navbar-nav.navbar-right
-             li: a(ui-sref='home'): i.fa.fa-home &nbsp; Home
-             li: a(ui-sref='search'): i.fa.fa-bolt &nbsp; Search
-             li: a(ui-sref='about'): i.fa.fa-truck &nbsp; About
-
+    div(ui-view)
       
     script(src='vendor/jquery/dist/jquery.js')
     script(src='vendor/lodash/lodash.js')

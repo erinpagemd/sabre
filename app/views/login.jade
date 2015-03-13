@@ -1,0 +1,21 @@
+.container
+  .row.main-login
+    .col-md-6
+      .img-login
+        img(src='images/planesunset.jpg')
+    .col-md-6.right-half-login
+      .row
+        table.table-login
+          tbody
+            tr.username-login
+              td: label(for='username-login') Email
+              td: input#username-login.form-control(type='email' placeholder='email')
+            tr.password-login
+              td: label(for='password-login') Password
+              td: input#password-login.form-control(placeholder='password')
+            tr.confirm-login
+              td: label(for='confirm-login') Confirm Password
+              td: input#confirm-login.form-control(placeholder='confirm password')
+      .row.btn-login
+        button.btn.btn-info.btn-lg Login
+        button.btn.btn-default Register new account
