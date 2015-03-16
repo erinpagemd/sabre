@@ -23,6 +23,9 @@
               td: input#stay-sabre.form-control(ng-model='stay' type='number' min='1' max='16' placeholder='length of stay')
             tr.date-sabre
               td: label(for='date-sabre') Date to leave
-              td: input#date-sabre.form-control(ng-model='date' type='date')
+              td: input#date-sabre.form-control(ng-model='date' type='text')
             tr.btn-sabre
-              td: button.btn.btn-default find my flight  
+              td: button.btn.btn-default(ng-click="getTripData()") find my flight  
+              
+  .row(ng-repeat='fare in fares')
+    p {{fare}}
