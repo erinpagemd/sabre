@@ -1,0 +1,28 @@
+.container
+  .row
+    .col-md-6
+      h1 I am ready to get out of {{origin}} on a {{theme}} vacation! 
+      h2 I have ${{fare}}.
+      h2 I am available for {{stay}} days starting on {{date}}.
+            
+    .col-md-6
+      form.row
+        table.table-sabre
+          tbody
+            tr.origin-sabre
+              td: label(for='origin-sabre') Airport of Origin
+              td: input#origin-sabre.form-control(ng-model='origin' placeholder='origin')
+            tr.theme-sabre
+              td: label(for='theme-sabre') Pick a theme
+              td: input#theme-sabre.form-control(ng-model='theme' placeholder='theme or top destinination')
+            tr.fare-sabre
+              td: label(for='fare-sabre') Maximum Fare
+              td: input#fare-sabre.form-control(ng-model='fare' type='number' min='1' placeholder='max fare')
+            tr.stay-sabre
+              td: label(for='stay-sabre') Length of Stay (up to 16 days max)
+              td: input#stay-sabre.form-control(ng-model='stay' type='number' min='1' max='16' placeholder='length of stay')
+            tr.date-sabre
+              td: label(for='date-sabre') Date to leave
+              td: input#date-sabre.form-control(ng-model='date' type='date')
+            tr.btn-sabre
+              td: button.btn.btn-default find my flight  

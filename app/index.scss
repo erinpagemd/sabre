@@ -9,13 +9,18 @@
   padding: 5%;
 }
 
-.table-login {
+form {
   input {
     background-color: #edefed;
   }
 
   td {
     padding: 2%;
+  }
+
+  .ng-invalid {
+    background-color: red;
+    color: white;
   }
 
 }

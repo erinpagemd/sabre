@@ -21,6 +21,7 @@ html
          ul.nav.navbar-nav.navbar-right
            li: a(ui-sref='home'): i.fa.fa-plane &nbsp; Home
            li: a(ui-sref='login'): i.fa.fa-bolt &nbsp; Login
+           li: a(ui-sref='sabre'): i.fa.fa-paper-plane &nbsp; Search
 
     div(ui-view)
       
@@ -31,4 +32,5 @@ html
     script(src='vendor/angular-ui-router/release/angular-ui-router.js')
     script(src='index.js')
     script(src='views/login.js')
+    script(src='views/sabre.js')
     script(src='models/users.js')

@@ -10,6 +10,7 @@ function LoginController ($scope, AuthFactory, BASE_URL) {
         console.log('Error logging in user: ', err);
       } else {
         console.log('Logged in successfully ', authData);
+        //need to grab simpleLogin/uid
       }
     });
   };
@@ -32,10 +33,13 @@ function getLoginObj ($scope) {
   var username = $scope.username;
   var password = $scope.password;
   var confirm = $scope.confirm;
+  $scope.username = null;
+  $scope.password = null;
+  $scope.confirm = null;
   var loginObj = {
     email: username,
     password: password
   };
-  console.log(loginObj);
+  console.log('getLoginObj: ', loginObj);
   return loginObj;
 }
